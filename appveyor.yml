@@ -4,7 +4,7 @@ environment:
   host: x86_64-pc-windows-msvc
   matrix:
     - platform: arm64
-      target: aarch64-pc-windows-msvc
+      target: aarch64-unknown-linux-gnu
       channel: nightly
 
 install:
