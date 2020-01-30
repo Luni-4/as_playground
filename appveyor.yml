@@ -1,4 +1,4 @@
-image: Visual Studio 2019
+image: Visual Studio 2015
 
 environment:
   host: x86_64-pc-windows-msvc
@@ -8,7 +8,6 @@ environment:
       channel: nightly
 
 install:
-    - set CLPATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\Hostx64\arm64
     - appveyor DownloadFile https://win.rustup.rs/ -FileName rustup-init.exe
     - appveyor DownloadFile https://people.xiph.org/~tdaede/nasm-2.14.02-win64.zip -FileName nasm.zip
     - appveyor DownloadFile https://github.com/mozilla/sccache/releases/download/0.2.11/sccache-0.2.11-x86_64-pc-windows-msvc.tar.gz
